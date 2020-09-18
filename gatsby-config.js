@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Kick off your next`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -34,8 +34,8 @@ module.exports = {
       resolve: "gatsby-source-dev",
       options: {
         // This is your username on Dev.to
-        username: 'syedkamal3262'
-      }
-    }
+        username: "syedkamal3262",
+      },
+    },
   ],
 }

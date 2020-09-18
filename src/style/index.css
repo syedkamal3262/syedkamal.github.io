@@ -1,0 +1,29 @@
+/* @keyframes slides {
+  0% {
+    font-size: inherit;
+  }
+  50% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: inherit;
+  }
+}
+.blink {
+  animation-name: slides;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  line-height: 50px;
+} */
+.blink {
+  animation: 1s ease 0s infinite normal none running blink;
+}
+.home__container {
+  padding: 20px;
+}
+.intro__button {
+  width: 150px;
+  border-radius: 50px;
+  height: auto;
+  padding: 5px;
+}

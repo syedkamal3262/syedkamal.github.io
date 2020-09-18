@@ -1,0 +1,12 @@
+.blog {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.blog p {
+  text-align: justify;
+}
+.blog a {
+  text-decoration: none;
+  color: inherit;
+}

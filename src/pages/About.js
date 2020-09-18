@@ -1,44 +1,33 @@
-import React from 'react'
+import React from "react"
 import Layout from "../Layout/Layout"
-import {graphql } from "gatsby"
-import Img from "gatsby-image"
-const About = ({ data }) =>{
-    return (
-        <Layout>
-        <div>
-            {data.allFile.edges.map(a=>
-            <div key={a.node.base}>
-            <Img 
-            durationFadeIn={7000}
-            style={{width:'90vw',height:'auto'}}
-            fluid={a.node.childImageSharp.fluid} />
-            </div>
-            )}
-        </div>
-        </Layout>
-    )
-}
 
-export const query = graphql`
-{
-    allFile(filter: {extension: {regex: "/(jpg)/"}}) {
-      edges {
-        node {
-          base
-          childImageSharp {
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
-      }
-    }
-  }
-  
-`
+const About = () => {
+  return (
+    <Layout>
+      <div>
+        <h1 className="intro">
+          Hi.
+          <br />
+          I'm <br />
+          Syed Kamal
+          <br />
+          a frontend
+          <br />
+          developer
+          <span className="blink">..</span>
+        </h1>
+      </div>
+      <p>
+        My skillset and interests includes: <br />
+        JavaScript,CSS3,HTML5 &
+        <br />
+        Responsive Design,Firebase
+        <br /> React &<br /> Gatsby,GraphQL,Headless CMS,
+        <br />
+        Material UI & Bootstrap ...
+      </p>
+    </Layout>
+  )
+}
 
 export default About

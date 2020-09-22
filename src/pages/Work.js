@@ -1,64 +1,45 @@
 import React from "react"
 import Layout from "../Layout/Layout"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
+import Portfolio from "../components/Portfolio"
 const Work = ({ data }) => {
   console.log(data)
+  const workStyle = {
+    width: "100%",
+  }
   return (
     <Layout>
-      {/* <div>
-            <h1>work</h1>
-            <ul>
-                <li>TVShop</li>
-                <li>Amazon Clone</li>
-                <li>Covid 19 Tracker</li>
-                <li>WhatsApp Clone</li>
-                <li>Netflix Clone</li>
-                <li>Do Something Using Redux</li>
-            </ul>
-
-
-            https://netflix-clone-2ba22.firebaseapp.com/
-            
-          </div> */}
-      <div className="projects">
-        <div className="project">
-          {data.allFile.edges.map(a => (
-            <div key={a.node.base}>
-              <Link to="">
-                <Img
-                  durationFadeIn={7000}
-                  style={{ width: "90vw", height: "auto" }}
-                  fluid={a.node.childImageSharp.fluid}
-                  alt={a.node.base}
-                />
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
+      <StaticQuery
+        query={graphql`
+          {
+            allJavascriptFrontmatter {
+              edges {
+                node {
+                  frontmatter {
+                    portfolioItems {
+                      title
+                      desc
+                      hostLink
+                      repoLink
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <div className="projects" style={workStyle}>
+            {data.allJavascriptFrontmatter.edges[0].node.frontmatter.portfolioItems.map(
+              data => (
+                <Portfolio key={data.title} data={data} />
+              )
+            )}
+          </div>
+        )}
+      ></StaticQuery>
     </Layout>
   )
 }
-export const query = graphql`
-  {
-    allFile(filter: { extension: { regex: "/(png)/" } }) {
-      edges {
-        node {
-          base
-          childImageSharp {
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 export default Work

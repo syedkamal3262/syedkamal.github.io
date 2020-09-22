@@ -5,12 +5,12 @@ import Devimg from "../icons/dev-brands.svg"
 import Gitimg from "../icons/github-brands.svg"
 import Linkedinimg from "../icons/linkedin-brands.svg"
 
-const Header = () => {
+const Header = ({ data }) => {
   return (
     <nav className="header">
       <div className="header__top">
         <h1 className="header__title">
-          <Link to="/">Syed Kamal</Link>
+          <Link to="/">{data.title}</Link>
         </h1>
         <div className="header__social">
           <a href="https://dev.to/syedkamal3262">

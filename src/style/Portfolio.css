@@ -1,19 +1,16 @@
-.blogs > h1,
-.blogs > p {
-  margin: 1rem;
-}
-.blog {
+.portfolio {
   padding: 5px 10px;
   border-radius: 5px;
   margin: 1rem;
   background-color: #e7eff7;
   color: #6c707c;
+  width: 80%;
 }
-.blog p {
+.portfolio p {
   text-align: justify;
   color: #a1a4ad;
 }
-.blog a {
+.portfolio a {
   text-decoration: none;
   color: inherit;
 }

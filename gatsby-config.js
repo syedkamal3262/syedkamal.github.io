@@ -1,8 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next`,
-    author: `@gatsbyjs`,
+    title: `Syed Kamal`,
+    description: `portfolio`,
+    author: `@syedKamal3262`,
+    twitterHandle: `https://twitter.com/flexdinesh`,
+    githubHandle: `https://github.com/flexdinesh`,
+    stackOverflowHandle: `https://stackoverflow.com/story/flexdinesh`,
+    devToHandle: `https://dev.to/flexdinesh`,
+    mediumHandle: `https://medium.com/@flexdinesh`,
+    linkedInHandle: `https://www.linkedin.com/in/dineshpandiyan/`,
+    siteUrl: `https://dineshpandiyan.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,5 +44,13 @@ module.exports = {
         username: "syedkamal3262",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-transformer-javascript-frontmatter`,
   ],
 }

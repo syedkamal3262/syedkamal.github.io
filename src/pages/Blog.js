@@ -12,7 +12,7 @@ const Blog = ({
   return (
     <Layout>
       <div className="blogs">
-        <h1>Blogs.. </h1>
+        <h1>Blogs</h1>
         <p>when i find something useful write it down at Dev.to</p>
         {edges.map(edge => (
           <div key={edge.node.article.id} className="blog">

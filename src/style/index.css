@@ -20,10 +20,19 @@
 }
 .home__container {
   padding: 20px;
+  height: 500px;
 }
 .intro__button {
   width: 150px;
   border-radius: 50px;
   height: auto;
   padding: 5px;
+  background-color: #e7eff7;
+  border: 2px solid rgb(255, 165, 73);
+  color: #71707d;
+  outline-color: none;
+}
+.intro__button:focus {
+  outline: none;
+  border: 2px solid #47b144;
 }

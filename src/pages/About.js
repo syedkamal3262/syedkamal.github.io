@@ -1,31 +1,34 @@
 import React from "react"
 import Layout from "../Layout/Layout"
+import "../style/About.css"
 
 const About = () => {
   return (
     <Layout>
-      <div>
-        <h1 className="intro">
-          Hi.
+      <div className="about">
+        <div>
+          <h1 className="intro">
+            Hi.
+            <br />
+            I'm <br />
+            Syed Kamal
+            <br />
+            a frontend
+            <br />
+            developer
+            <span className="blink">..</span>
+          </h1>
+        </div>
+        <p className="intro__skillset">
+          My skillset and interests includes: <br />
+          JavaScript,CSS3,HTML5 &
           <br />
-          I'm <br />
-          Syed Kamal
+          Responsive Design,Firebase
+          <br /> React &<br /> Gatsby,GraphQL,Headless CMS,
           <br />
-          a frontend
-          <br />
-          developer
-          <span className="blink">..</span>
-        </h1>
+          Material UI & Bootstrap ...
+        </p>
       </div>
-      <p>
-        My skillset and interests includes: <br />
-        JavaScript,CSS3,HTML5 &
-        <br />
-        Responsive Design,Firebase
-        <br /> React &<br /> Gatsby,GraphQL,Headless CMS,
-        <br />
-        Material UI & Bootstrap ...
-      </p>
     </Layout>
   )
 }

@@ -12,8 +12,8 @@ const Blog = ({
   return (
     <Layout>
       <div className="blogs">
-        <h1>My Blogs</h1>
-        <p>...</p>
+        <h1>Blogs.. </h1>
+        <p>when i find something useful write it down at Dev.to</p>
         {edges.map(edge => (
           <div key={edge.node.article.id} className="blog">
             <Link to={`https://dev.to/syedkamal3262/`}>

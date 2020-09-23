@@ -1,17 +1,18 @@
+.blogs {
+  margin: 10px;
+}
 .blogs > h1,
 .blogs > p {
-  margin: 1rem;
+  margin: 5px;
 }
 .blog {
   padding: 5px 10px;
   border-radius: 5px;
   margin: 1rem;
   background-color: #e7eff7;
-  color: #6c707c;
 }
 .blog p {
   text-align: justify;
-  color: #a1a4ad;
 }
 .blog a {
   text-decoration: none;

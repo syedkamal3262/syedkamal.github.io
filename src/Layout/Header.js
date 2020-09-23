@@ -7,7 +7,7 @@ import Linkedinimg from "../icons/linkedin-brands.svg"
 
 const Header = ({ data }) => {
   return (
-    <nav className="header">
+    <div className="header">
       <div className="header__top">
         <h1 className="header__title">
           <Link to="/">{data.title}</Link>
@@ -35,7 +35,7 @@ const Header = ({ data }) => {
           <Link to="/About">About</Link>
         </li>
       </ul>
-    </nav>
+    </div>
   )
 }
 

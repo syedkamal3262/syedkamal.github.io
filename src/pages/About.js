@@ -20,13 +20,13 @@ const About = () => {
           </h1>
         </div>
         <p className="intro__skillset">
-          My skillset and interests includes: <br />
+          <span>My skillset and interests includes:</span> <br />
           JavaScript,CSS3,HTML5 &
           <br />
           Responsive Design,Firebase
           <br /> React &<br /> Gatsby,GraphQL,Headless CMS,
           <br />
-          Material UI & Bootstrap ...
+          Material UI & Bootstrap...
         </p>
       </div>
     </Layout>

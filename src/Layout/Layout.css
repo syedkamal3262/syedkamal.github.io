@@ -1,18 +1,46 @@
-.app {
-  padding: 2px;
-  background-color: #f4f7f9;
-  color: #587da7;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
   margin: 0px !important;
+  padding: 0px !important;
+  background-color: #f4f7f9;
 }
 .app_content {
-  width: 60vw;
+  width: 60%;
   margin: 0px auto;
-  display: grid;
-  place-items: center;
 }
 @media screen and (max-width: 992px) {
   .app_content {
-    width: 95vw;
-    margin: 0px auto;
+    width: 100%;
   }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  color: #587da7;
+}
+p {
+  color: #6c707c;
 }

@@ -1,6 +1,13 @@
-.intro__skillset {
-  color: #6c707c;
-}
 .about {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.intro {
+  font-size: 35px;
+}
+.intro__skillset > span {
+  color: #577ea9;
 }

@@ -1,15 +1,13 @@
-.header__top {
-  margin: 0px 2pc;
+.header {
+  display: grid;
+  place-items: center;
 }
-.header ul {
-  display: flex;
-  float: 1;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 .header__links {
-  width: 50vw;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
 }
 .header__links > li {
   list-style: none;
@@ -20,6 +18,8 @@
 }
 .header__title {
   margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 25px;
 }
 .header__title > a {
   text-decoration: none;
@@ -30,9 +30,9 @@
 }
 .header__social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 7rem;
+  width: 80%;
 }
 .header__social img {
   width: 20px;

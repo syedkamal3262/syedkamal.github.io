@@ -1,14 +1,11 @@
 .portfolio {
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
   margin: 1rem;
   background-color: #e7eff7;
-  color: #6c707c;
-  width: 80%;
 }
 .portfolio p {
   text-align: justify;
-  color: #a1a4ad;
 }
 .portfolio a {
   text-decoration: none;

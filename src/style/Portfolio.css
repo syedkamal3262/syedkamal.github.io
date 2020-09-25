@@ -1,8 +1,9 @@
 .portfolio {
   padding: 10px 10px;
-  border-radius: 5px;
+  border-radius: 1rem;
   margin: 1rem;
   background-color: #e7eff7;
+  flex: 0 40%;
 }
 .portfolio p {
   text-align: justify;

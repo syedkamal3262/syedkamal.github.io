@@ -4,7 +4,7 @@ export const frontmatter = {
       title: "Amazon-Clone",
       desc: "A React ",
       hostLink: "https:///clone-3b8e4.web.app",
-      repoLink: "https://https://github.com/syedkamal3262/amazon-clone",
+      repoLink: "https://github.com/syedkamal3262/amazon-clone.git",
     },
     {
       title: "TVShop",

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 200px;
 }
 .header__links > li {
   list-style: none;
@@ -15,16 +15,18 @@
 .header__links > li > a {
   text-decoration: none;
   color: inherit;
+  word-spacing: 5px;
+  letter-spacing: 3px;
 }
 .header__title {
-  margin-bottom: 1px;
+  margin-bottom: 1rem;
   font-weight: bold;
   font-size: 25px;
 }
 .header__title > a {
   text-decoration: none;
   color: inherit;
-  font-weight: 100;
+  font-weight: 800;
   word-spacing: 5px;
   letter-spacing: 3px;
 }
@@ -39,8 +41,8 @@
   height: 20px;
 }
 .header__links > li:hover {
-  color: #47b144;
+  font-weight: 900;
 }
 .header__links > li a:active {
-  color: #47b144;
+  font-weight: bolder;
 }

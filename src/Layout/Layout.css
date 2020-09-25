@@ -11,7 +11,7 @@ body {
   width: 60%;
   margin: 0px auto;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .app_content {
     width: 100%;
   }

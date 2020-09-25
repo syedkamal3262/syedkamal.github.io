@@ -4,7 +4,7 @@ import "./Footer.css"
 const Footer = ({ data }) => {
   return (
     <div className="footer">
-      <p>{data.author}</p>
+      <p></p>
     </div>
   )
 }
